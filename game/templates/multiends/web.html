@@ -3,11 +3,11 @@
 <head>
     <link rel="stylesheet" href="{% static 'css/game.css' %}">
     <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}">
-    <script src="{% static 'js/dist/game.js' %}"></script>
 </head>
 <body style="margin: 0">
     <div id="ac_game_1234"></div>
-    <script>
+    <script type="module">
+        import {AcGame} from "{% static 'js/dist/game.js' %}";
         $(document).ready(function(){
             let ac_game = new AcGame("ac_game_1234");
         })
