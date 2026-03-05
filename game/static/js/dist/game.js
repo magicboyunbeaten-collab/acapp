@@ -158,7 +158,7 @@ class Particle extends AcGameObject{
     render(){
         this.ctx.beginPath();
         this.ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        this.ctxfillStyle = this.color;
+        this.ctx.fillStyle = this.color;
         this.ctx.fill();
     }
 }
